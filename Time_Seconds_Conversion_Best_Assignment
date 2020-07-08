@@ -1,0 +1,23 @@
+package Time;
+import java.util.Scanner;
+
+public class time {
+
+	public static void main(String[] args) {
+		Scanner wow = new Scanner(System.in);
+		
+
+	System.out.println("\nNo. of Days value to send mail :- ");
+			int Days = wow.nextInt();
+	System.out.println("\nNo. of Hour value to send mail :- ");
+		int Hour = wow.nextInt();		
+	System.out.println("\nNo. of Minutes value to send mail :- ");
+		float Minutes = wow.nextFloat();
+	System.out.println("\nNo. of Second value to send mail :- ");
+		float Second = wow.nextFloat();
+		
+			float TotalTime= ((Days * 86400 ) +(Hour * 3600 ) +(Minutes * 60 )+(Second * 1 ));
+	
+		System.out.println("The Total Time To send Mail in Seconds is " +TotalTime);
+	}
+}
